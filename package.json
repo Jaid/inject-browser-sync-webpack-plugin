@@ -21,8 +21,8 @@
     "load-json-file": "^6.2.0",
     "pify": "^4.0.1",
     "rimraf": "^3.0.0",
-    "webpack": "^4.41.4",
-    "webpack-config-jaid": "^7.11.0"
+    "webpack": "^4.41.5",
+    "webpack-config-jaid": "^9.0.2"
   },
   "scripts": {
     "clean": "rimraf dist/",
