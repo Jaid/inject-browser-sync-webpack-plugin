@@ -1,1 +1,1 @@
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<script id="__bs_script__" async>document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js'></script>".replace("HOST", location.hostname))</script>

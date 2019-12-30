@@ -1,34 +1,23 @@
 /** @module inject-browser-sync-webpack-plugin */
 
 import createHtmlElement from "create-html-element"
-import insertStringAfter from "insert-string-after"
+import insertStringBefore from "insert-string-before"
 
 /**
  * @typedef {Object} Options
- * @prop {string} [href = /favicon.ico]
- * @prop {string} [rel = icon]
- * @prop {string} [type = isIco ? "image/x-icon" : "image/png"]
  */
 
 /**
  * @class
  */
-export default class HtmlFaviconPlugin {
+export default class InjectBrowserSyncPlugin {
 
   /**
    * @constructor
    * @param {Options} [options] Plugin options
    */
   constructor(options) {
-    this.options = {
-      href: "/favicon.ico",
-      rel: "icon",
-      ...options,
-    }
-    if (!this.options.type) {
-      const isIco = /\.ico$/i.test(this.options.href)
-      this.options.type = isIco ? "image/x-icon" : "image/png"
-    }
+    this.options = options
   }
 
   /**
@@ -38,14 +27,14 @@ export default class HtmlFaviconPlugin {
     compiler.hooks.compilation.tap(_PKG_NAME, compilation => {
       compilation.hooks.htmlWebpackPluginAfterHtmlProcessing.tapAsync(_PKG_NAME, (data, cb) => {
         const element = createHtmlElement({
-          name: "link",
+          name: "script",
+          html: "document.write(\"<script async src='http://HOST:3000/browser-sync/browser-sync-client.js'></script>\".replace(\"HOST\", location.hostname))",
           attributes: {
-            rel: this.options.rel,
-            type: this.options.type,
-            href: this.options.href,
+            id: "__bs_script__",
+            async: true,
           },
         })
-        data.html = insertStringAfter(data.html, "<head>", element)
+        data.html = insertStringBefore(data.html, "</body>", element)
         cb(null, data)
       })
     })
