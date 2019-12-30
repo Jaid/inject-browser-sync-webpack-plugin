@@ -5,11 +5,11 @@ import pify from "pify"
 import webpack from "webpack"
 
 const indexModule = (process.env.MAIN ? path.resolve(process.env.MAIN) : path.join(__dirname, "..", "src")) |> require
-const {default: PkgBannerPlugin} = indexModule
+const {default: Plugin} = indexModule
 
 it("should run", async () => {
   const generateWebpackConfig = require(path.join(__dirname, "..", "example", "webpack.config.js"))
-  const webpackConfig = generateWebpackConfig(PkgBannerPlugin)
+  const webpackConfig = generateWebpackConfig(Plugin)
   await pify(webpack)(webpackConfig)
   const outputFile = path.join(webpackConfig.output.path, webpackConfig.output.filename)
   const exists = await fsp.pathExists(outputFile)
