@@ -1,1 +1,41 @@
-{"webpackConfigJaid":"nodeClass","version":"0.1.0","author":"Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)","dependencies":{"@babel/runtime":"^7.7.7","create-html-element":"^3.0.0","debug":"^4.1.1","html-webpack-plugin":"^3.2.0","insert-string-after":"^1.0.0"},"devDependencies":{"acorn":"^7.1.0","babel-jest":"^24.9.0","babel-preset-jaid":"^7.3.0","browserslist-config-jaid-node":"^2.2.2","clean-webpack-plugin":"^3.0.0","eslint":"^6.8.0","eslint-config-jaid":"^1.41.1","jest":"^24.9.0","load-json-file":"^6.2.0","pify":"^4.0.1","rimraf":"^3.0.0","webpack":"^4.41.4","webpack-config-jaid":"^7.11.0"},"scripts":{"clean":"rimraf dist/","babel:prod":"rimraf dist/transpiled/production && NODE_ENV=production babel --out-dir dist/transpiled/production --source-maps true src","babel:dev":"rimraf dist/transpiled/development && NODE_ENV=development babel --out-dir dist/transpiled/development src","babel:test":"rimraf dist/transpiled/test && NODE_ENV=test babel --out-dir dist/transpiled/test src","build:prod":"NODE_ENV=production webpack","build:dev":"NODE_ENV=development webpack","test":"npm run build:prod && NODE_ENV=production MAIN=dist/package/production jest --runInBand --detectOpenHandles","test:coverage":"npm run test:dev -- --coverage --json --outputFile=dist/jest/stats.json","test:debug":"DEBUG=\"$(basename $PWD),$(basename $PWD):*\" NODE_ENV=test node --inspect=9229 node_modules/jest/bin/jest.js --runInBand","prepareActionJest":"npm run build:prod"},"name":"inject-browser-sync-webpack-plugin","description":"Webpack plugin that injects the browser-sync script into the html-webpack-plugin output."}
+{
+  "webpackConfigJaid": "nodeClass",
+  "version": "0.1.0",
+  "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
+  "dependencies": {
+    "@babel/runtime": "^7.7.7",
+    "create-html-element": "^3.0.0",
+    "debug": "^4.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "insert-string-after": "^1.0.0"
+  },
+  "devDependencies": {
+    "acorn": "^7.1.0",
+    "babel-jest": "^24.9.0",
+    "babel-preset-jaid": "^7.3.0",
+    "browserslist-config-jaid-node": "^2.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-jaid": "^1.41.1",
+    "jest": "^24.9.0",
+    "load-json-file": "^6.2.0",
+    "pify": "^4.0.1",
+    "rimraf": "^3.0.0",
+    "webpack": "^4.41.4",
+    "webpack-config-jaid": "^7.11.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist/",
+    "babel:prod": "rimraf dist/transpiled/production && NODE_ENV=production babel --out-dir dist/transpiled/production --source-maps true src",
+    "babel:dev": "rimraf dist/transpiled/development && NODE_ENV=development babel --out-dir dist/transpiled/development src",
+    "babel:test": "rimraf dist/transpiled/test && NODE_ENV=test babel --out-dir dist/transpiled/test src",
+    "build:prod": "NODE_ENV=production webpack",
+    "build:dev": "NODE_ENV=development webpack",
+    "test": "npm run build:prod && NODE_ENV=production MAIN=dist/package/production jest --runInBand --detectOpenHandles",
+    "test:coverage": "npm run test:dev -- --coverage --json --outputFile=dist/jest/stats.json",
+    "test:debug": "DEBUG=\"$(basename $PWD),$(basename $PWD):*\" NODE_ENV=test node --inspect=9229 node_modules/jest/bin/jest.js --runInBand",
+    "prepareActionJest": "npm run build:prod"
+  },
+  "name": "inject-browser-sync-webpack-plugin",
+  "description": "Webpack plugin that injects the browser-sync script into the html-webpack-plugin output."
+}
