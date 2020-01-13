@@ -37,5 +37,9 @@
   },
   "name": "inject-browser-sync-webpack-plugin",
   "description": "Webpack plugin that injects the browser-sync script into the html-webpack-plugin output.",
-  "funding": "https://github.com/sponsors/jaid"
+  "funding": "https://github.com/sponsors/jaid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaid/inject-browser-sync-webpack-plugin"
+  }
 }
