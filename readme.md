@@ -1,9 +1,9 @@
 # inject-browser-sync-webpack-plugin
 
 
-<a href="https://raw.githubusercontent.com/Jaid/inject-browser-sync-webpack-plugin/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/inject-browser-sync-webpack-plugin?style=flat-square" alt="License"/></a>  
-<a href="https://actions-badge.atrox.dev/Jaid/inject-browser-sync-webpack-plugin/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Finject-browser-sync-webpack-plugin%2Fbadge" alt="Build status"/></a> <a href="https://github.com/Jaid/inject-browser-sync-webpack-plugin/commits"><img src="https://img.shields.io/github/commits-since/Jaid/inject-browser-sync-webpack-plugin/v1.1.0?style=flat-square&logo=github" alt="Commits since v1.1.0"/></a> <a href="https://github.com/Jaid/inject-browser-sync-webpack-plugin/commits"><img src="https://img.shields.io/github/last-commit/Jaid/inject-browser-sync-webpack-plugin?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/inject-browser-sync-webpack-plugin/issues"><img src="https://img.shields.io/github/issues/Jaid/inject-browser-sync-webpack-plugin?style=flat-square&logo=github" alt="Issues"/></a>  
-<a href="https://npmjs.com/package/inject-browser-sync-webpack-plugin"><img src="https://img.shields.io/npm/v/inject-browser-sync-webpack-plugin?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/Jaid/inject-browser-sync-webpack-plugin/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/inject-browser-sync-webpack-plugin?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/inject-browser-sync-webpack-plugin"><img src="https://img.shields.io/npm/dm/inject-browser-sync-webpack-plugin?style=flat-square&logo=npm" alt="Downloads"/></a>
+<a href="https://raw.githubusercontent.com/jaid/inject-browser-sync-webpack-plugin/master/license.txt"><img src="https://img.shields.io/github/license/jaid/inject-browser-sync-webpack-plugin?style=flat-square" alt="License"/></a> <a href="https://github.com/sponsors/jaid"><img src="https://img.shields.io/badge/<3-Sponsor-FF45F1?style=flat-square" alt="Sponsor inject-browser-sync-webpack-plugin"/></a>
+<a href="https://actions-badge.atrox.dev/jaid/inject-browser-sync-webpack-plugin/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2Fjaid%2Finject-browser-sync-webpack-plugin%2Fbadge" alt="Build status"/></a> <a href="https://github.com/jaid/inject-browser-sync-webpack-plugin/commits"><img src="https://img.shields.io/github/commits-since/jaid/inject-browser-sync-webpack-plugin/v1.1.0?style=flat-square&logo=github" alt="Commits since v1.1.0"/></a> <a href="https://github.com/jaid/inject-browser-sync-webpack-plugin/commits"><img src="https://img.shields.io/github/last-commit/jaid/inject-browser-sync-webpack-plugin?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/jaid/inject-browser-sync-webpack-plugin/issues"><img src="https://img.shields.io/github/issues/jaid/inject-browser-sync-webpack-plugin?style=flat-square&logo=github" alt="Issues"/></a>  
+<a href="https://npmjs.com/package/inject-browser-sync-webpack-plugin"><img src="https://img.shields.io/npm/v/inject-browser-sync-webpack-plugin?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/jaid/inject-browser-sync-webpack-plugin/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/inject-browser-sync-webpack-plugin?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/inject-browser-sync-webpack-plugin"><img src="https://img.shields.io/npm/dm/inject-browser-sync-webpack-plugin?style=flat-square&logo=npm" alt="Downloads"/></a>
 
 **Webpack plugin that injects the browser-sync script into the html-webpack-plugin output.**
 
@@ -37,14 +37,13 @@ yarn add --dev inject-browser-sync-webpack-plugin@^1.1.0
 
 
 
-
 ## Development
 
 
 
 Setting up:
 ```bash
-git clone git@github.com:Jaid/inject-browser-sync-webpack-plugin.git
+git clone git@github.com:jaid/inject-browser-sync-webpack-plugin.git
 cd inject-browser-sync-webpack-plugin
 npm install
 ```
