@@ -1,5 +1,6 @@
 /** @module inject-browser-sync-webpack-plugin */
 
+import HtmlWebpackPlugin from "html-webpack-plugin"
 import insertStringBefore from "insert-string-before"
 
 import injectionTemplate from "./injection.hbs"
@@ -33,7 +34,7 @@ export default class InjectBrowserSyncPlugin {
       options: this.options,
     })
     compiler.hooks.compilation.tap(_PKG_NAME, compilation => {
-      compilation.hooks.htmlWebpackPluginAfterHtmlProcessing.tapAsync(_PKG_NAME, (data, cb) => {
+      HtmlWebpackPlugin.getHooks(compilation).beforeEmit.tapAsync(_PKG_NAME, (data, cb) => {
         data.html = insertStringBefore(data.html, "</body>", injection)
         cb(null, data)
       })
