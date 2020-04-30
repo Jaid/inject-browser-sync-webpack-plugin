@@ -42,5 +42,19 @@
     "url": "https://github.com/jaid/inject-browser-sync-webpack-plugin"
   },
   "homepage": "https://github.com/Jaid/inject-browser-sync-webpack-plugin",
-  "keywords": []
+  "keywords": [
+    "browser-sync",
+    "debug",
+    "debugging",
+    "html",
+    "html-webpack-plugin",
+    "html-webpack-plugin-plugin",
+    "lib",
+    "library",
+    "plugin",
+    "util",
+    "utility",
+    "webpack",
+    "webpack-plugin"
+  ]
 }
