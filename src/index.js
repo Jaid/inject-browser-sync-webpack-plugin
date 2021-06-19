@@ -34,9 +34,8 @@ export default class InjectBrowserSyncPlugin {
       options: this.options,
     })
     compiler.hooks.compilation.tap(process.env.REPLACE_PKG_NAME, compilation => {
-      HtmlWebpackPlugin.getHooks(compilation).beforeEmit.tapAsync(process.env.REPLACE_PKG_NAME, (data, cb) => {
+      HtmlWebpackPlugin.getHooks(compilation).beforeEmit.tap(process.env.REPLACE_PKG_NAME, data => {
         data.html = insertStringBefore(data.html, "</body>", injection)
-        cb(null, data)
       })
     })
   }
