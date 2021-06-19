@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "debug": "^4.3.1",
-    "insert-string-before": "^1.0.0"
+    "insert-string-after": "^1.0.0"
   },
   "devDependencies": {
     "babel-jest": "^27.0.2",
