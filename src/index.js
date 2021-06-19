@@ -9,7 +9,8 @@ import debug from "lib/debug"
 
 /**
  * @typedef {Object} Options
- * @prop {number} [port = 3000]
+ * @prop {number} [port=3000]
+ * @prop {string} [scriptProtocol="http"]
  */
 
 /**
@@ -24,6 +25,7 @@ export default class InjectBrowserSyncPlugin {
   constructor(options) {
     this.options = {
       port: 3000,
+      scriptProtocol: "http",
       ...options,
     }
   }
