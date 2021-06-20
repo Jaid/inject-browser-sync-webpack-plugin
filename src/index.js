@@ -3,9 +3,9 @@
 import HtmlWebpackPlugin from "html-webpack-plugin"
 import insertStringAfter from "insert-string-after"
 
-import injectionTemplate from "./injection.hbs"
-
 import debug from "lib/debug"
+
+import injectionTemplate from "./injection.hbs"
 
 /**
  * @typedef {Object} Options
